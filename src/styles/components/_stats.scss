@@ -1,0 +1,16 @@
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+.stat-item {
+    width: calc(25% - 80px);
+
+    h2 {
+        color: $blue;
+        margin: 0 0 10px;
+    }
+    h5 {
+        margin: 0 0 10px;
+        line-height: 36px;
+    }
+}

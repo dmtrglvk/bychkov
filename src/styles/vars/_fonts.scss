@@ -1,0 +1,9 @@
+$notosans: 'Noto Sans', Arial, sans-serif;
+$scada: 'Scada', Arial, sans-serif;
+
+@font-face {
+  @include fonts('Noto Sans', notosans/noto-sans-webfont);
+}
+@font-face {
+  @include fonts('Scada', scada/scada-webfont);
+}

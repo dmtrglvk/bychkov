@@ -1,0 +1,21 @@
+.youtube-promo {
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #EB5757);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 5s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+    animation: Gradient 5s ease infinite;
+    color: $white;
+    padding: 30px 45px;
+    margin: 50px 0 0;
+
+    .flexbox {
+        align-items: center;
+    }
+    a {
+        @include above-cursor();
+    }
+    svg {
+        width: 55px;
+        height: 65px;
+    }
+}

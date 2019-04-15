@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    @include above-cursor();
+    padding: 65px 0;
+}
+.logo {
+    height: 35px;
+    overflow: hidden;
+    font-size: 24px;
+
+    span {
+        display: block;
+        margin-top: 0;
+        transition: margin-top 0.2s ease;
+    }
+    .logo-back {
+        font: 20px $scada;
+    }
+    svg {
+        width: 19px;
+        height: 14px;
+        fill: $blue;
+    }
+    &:hover {
+        span:first-child {
+            margin-top: -35px;
+        }
+    }
+}
+.main-nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}

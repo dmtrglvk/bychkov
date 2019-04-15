@@ -1,0 +1,26 @@
+@mixin arrow($width, $height, $border_width, $rotate) {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	transform: rotate($rotate) skewX(-15deg);
+	width: $width;
+	height: $height;
+	border-style: solid;
+	border-color: inherit;
+	border-width: 0 $border_width $border_width 0;
+}
+@mixin object-fit() {
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+@mixin fonts($font-family, $file-path){
+	font-family: $font-family;
+	src: url('../fonts/#{$file-path}.woff2') format('woff2'),
+	url('../fonts/#{$file-path}.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@mixin above-cursor() {
+	position: relative;
+	z-index: 6;
+}

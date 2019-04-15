@@ -1,0 +1,40 @@
+.main-content {
+    padding: 50px 0 120px;
+    background: $white;
+    position: relative;
+    z-index: 2;
+
+    &:after,
+    &:before {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        content: '';
+        background: $white;
+        height: 100%;
+    }
+    &:before {
+        left: -200px;
+    }
+    &:after {
+        right: -200px;
+    }
+}
+.content-container {
+    @include above-cursor();
+}
+.aside {
+    width: 205px;
+    margin: 0 0 0 100px;
+    @include above-cursor();
+
+    h4 {
+        margin: 0 0 10px;
+    }
+    ul {
+        margin: 0 0 30px;
+    }
+}
+.content {
+    @include above-cursor();
+}
